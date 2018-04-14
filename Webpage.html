@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title>Sample Page</Title>
+<style>
+h1.center { 
+	text-align: center; 
+}
+
+h1.large { 
+	font-size: 80%;
+}
+
+p.center {
+    text-align: center;
+    color: red;
+}
+
+p.large {
+    font-size: 300%;
+}
+
+button.center {
+	text-align: center;
+}
+
+.button {
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">This heading will be smaller and centered</h1>
+<p class="center">This paragraph will be red and center-aligned.</p>
+<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+<p class="center" id="demo">This will dissappear when you click the button.</p>
+<center>
+	<button class="button" onclick="myFunction()">The Magical Button</button>
+</center>
+<script>
+var data = 0;
+function myFunction() {
+	if(data % 2 == 0)
+		document.getElementById("demo").innerHTML = "It changed!";
+	else
+		document.getElementById("demo").innerHTML = "It went back :)";
+	data++;
+}
+</script>
+
+
+</body>
+</html> 
